@@ -1,0 +1,71 @@
+/* Turing CSS */
+/* By Mistrza */
+
+body {
+     background-color: #fbfbfb;
+     color: #333;
+     font-family: monospace;
+     font-weight: bold;
+     text-decoration-skip: none;
+     text-align: justify;
+}
+ h1, h2, h3, h4, h5, h6, p, li, .cm-s-inner, .footnote-line {
+     font-size: 16px;
+}
+ h1, h2 {
+     text-align: center;
+}
+ h1 {
+     text-transform: uppercase;
+}
+ h2, h3, em, th, .cm-keyword {
+     text-decoration: underline;
+}
+ blockquote, strong {
+     color: darkblue 
+}
+ blockquote {
+     margin-left: 30px 
+}
+a, .footnote-line {
+     color: #333;
+}
+ em, strong {
+     font-style: normal;
+}
+ ul {
+     list-style-type: square 
+}
+ #write {
+     max-width: 60em
+}
+ #footer p {
+     border-top: 2px solid #333;
+     margin-top: 10px;
+}
+
+/* Codes */
+ .cm-s-inner {
+     border-left: 2px solid #333;
+     padding-left: 1em 
+}
+ .cm-s-inner * {
+     color: #333 !important 
+}
+
+/* Numbering */
+ h1 {
+     counter-reset: h2 
+}
+ h2 {
+     counter-reset: h3 
+}
+ #write h2:before {
+     counter-increment: h2;
+     content: counter(h2) ". " 
+}
+ #write h3:before {
+     counter-increment: h3;
+     content: counter(h2) "." counter(h3) ". " 
+}
+ 
